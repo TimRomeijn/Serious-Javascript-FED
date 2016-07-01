@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+
+
+ RewriteRule ^music/([0-9]+)/?$ musicDetails.php?id=$1 [NC,L]
+
+ RewriteRule ^music/?$ music.php [NC,L]
+
+
+</IfModule>
